@@ -14,7 +14,15 @@
 
 }
 
-.p1 {
+#parTag1 { font-size: 18px;
+    height: 60px; 
+    background-color: lightgrey;
+
+}
+
+#question { font-size: 26px;
+    height: 30px; 
+    background-color: lightblue;
 
 }
 
