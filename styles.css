@@ -1,0 +1,72 @@
+.h1 {
+
+}
+
+.h2 {
+
+}
+
+.h3 {
+
+}
+
+.p {
+
+}
+
+#parTag1 { font-size: 18px;
+    height: 60px; 
+    background-color: lightgrey;
+
+}
+
+#question { font-size: 26px;
+    height: 30px; 
+    background-color: lightblue;
+
+}
+
+.list1 { background-color: yellow;
+    font-size: 28px;
+    left: 20%;
+    margin: 10px;
+
+}
+
+.hoover { 
+    box-shadow: gray;
+}
+
+.btn {
+
+}
+
+.button {
+
+}
+
+.background {
+background-color: gray;
+background-blend-mode: black;
+background-blend-mode: red;
+}
+
+.animation-timing-fuction {
+
+}
+
+.background-position {
+}
+
+.box-sizing {
+
+}
+
+.display {
+
+}
+
+.text-decoration {
+
+}
+

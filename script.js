@@ -6,5 +6,3 @@ var pTag1 = document.createElement("p");
     var input1 = document.createElement("input");
     input1.setAttribute("class", "input")
     document.getElementById('parTag1').appendChild(input1);
-
- 
