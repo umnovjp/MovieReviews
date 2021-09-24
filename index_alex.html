@@ -2,26 +2,19 @@
 <!DOCTYPE html>
 
 <html lang="en-US">
-
- 
-
- <!----> <head class = 'header'>
+<head class = 'header'>
 
     <meta charset="UTF-8">
-
-    <title></title>
-
+    <title>Awesome Movie Finder</title>
     <link rel="stylesheet" href="style.css">
 
   </head>
-
- 
 
   <body>
 
     <header>
 
-      <h1>Movie Recommendations!</h1>
+      <h1>Greatestttt Movie Recommendations!</h1>
 
     </header>
 
@@ -42,64 +35,31 @@
         <button class = 'searchParameter' id = 'thrillerImdbButton' value = 'Thriller'>Click me to search IMDB Thrillers</button>
         <button class = 'searchParameter' id = 'comedyImdbButton' value = 'Comedy'>Click me to search IMDB Comedy</button>
         <button class = 'searchParameter' id = 'actionImdbButton' value = 'Action'>Click me to search IMDB Action</button>
-        enter year
-      </div> <!--this div creates input area to enter search-->
-      <h2>Top 5 dramas</h2>
-      <div id = 'boxOfDVDsDrama'>
+        <input id = 'myInput'>
+        <button class = 'searchParameter' type = 'button' id = 'enterYear' onclick = 'getInputValue();'>Click me to enter year</button>
 
-      </div>
-
-      <div id = 'boxOfDVDsOmdb'>
-        <p>Placeholder from next div</p>
+        <script>function getInputValue() {var inputVal = document.getElementById('myInput').value;
+        alert(inputVal);}</script>
+      </div> <!--this div creates input area to enter search parameters-->
+      <div id = 'boxOfDVDsOmdb'></div> <!--I do not use this div-->
       
-      </div>
+
+      <h2>Top 5 dramas</h2>
+      <div id = 'boxOfDVDsDrama'></div>      
 
       <h2>Top 5 family movies</h2>
-        <div id = 'boxOfDVDsFamily'>
-          <p>placeholder for family</p>
-        </div>
+        <div id = 'boxOfDVDsFamily'></div>
         <h2>Top 5 thrillers</h2>
-        <div id = 'boxOfDVDsThriller'>
-          <button class = 'searchParameter' id = 'searchOmdbButton'>Click me to search OMDB</button>    
-          <p>placeholder for thrillers</p>
-        </div>
+        <div id = 'boxOfDVDsThriller'></div>
 
         <h2>Top 5 comedies</h2>
-        <div id = 'boxOfDVDsComedy'>
-          
-          <p>placeholder for comedies</p>
-        </div>
+        <div id = 'boxOfDVDsComedy'></div>
 
         <h2>Top 5 action movies</h2>
-        <div id = 'boxOfDVDsAction'>
-          
-          <p>placeholder for action movies</p>
-        </div>
+        <div id = 'boxOfDVDsAction'></div>
     
       <section>
 
-
-  
-        
-
-        <h2>Top 5 horror movies</h2>
-  
-        <p>This is recommendation # 7</p>
-        <p>This is recommendation # 8</p>
-        <p>This is recommendation # 9</p>
-
-        <h2>Top 5 disney movies</h2>
-  
-        <p>This is recommendation # 10</p>
-        <p>This is recommendation # 11</p>
-        <p>This is recommendation # 12</p>
-
-        <h2>Top 5 action movies</h2>
-  
-        <p>This is recommendation # 13</p>
-        <p>This is recommendation # 14</p>
-        <p>This is recommendation # 15</p>
-  
         <h4>.</h4>
   
       </section>
