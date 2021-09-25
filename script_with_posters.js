@@ -21,20 +21,26 @@ var thrillerCount = 0;
 var comedyCount = 0;
 var actionCount = 0;
 
-// two lines below will allow user to search by year
-// function getInputValue() {var inputVal = document.getElementById('myInput').value;
-// console.log(inputVal)}
+function getInputValue() {var inputVal = document.getElementById('myInput').value;
+console.log(inputVal)}
 
 fetchImdbDrama.addEventListener('click', getApiDataImdb);
 fetchImdbFamily.addEventListener('click', getApiDataImdb);
 fetchImdbThriller.addEventListener('click', getApiDataImdb);
 fetchImdbComedy.addEventListener('click', getApiDataImdb);
 fetchImdbAction.addEventListener('click', getApiDataImdb);
+// enterYear0.addEventListener('click', updateYear);
+
 
 function getApiDataImdb(event) {
+ // var buttonInput = console.log(event.currentTarget);
+  // document.writeln(String(buttonInput));
   var genre = event.currentTarget.value;
   console.log(genre);
-
+// if (inputVal = 'undefined') {inputVal = '2021'}
+//  else { }
+  console.log(inputVal)
+  
   var requestURL = 'https://data-imdb1.p.rapidapi.com/movie/byYear/' + inputVal + '/byGen/' + genre + '/';
   fetch(requestURL, {
     "method": "GET", "headers": {
@@ -48,8 +54,9 @@ function getApiDataImdb(event) {
     })
     .then(function (data) {
       console.log(data);
-      for (i = 0; i < 5; i++) {
+      for (i = 0; i < 5 ; i++) {
         var movieName = document.createElement('p');
+        //  var movieYear = document.createElement('p');
         movieName.textContent = data.Data[i].title;
         movieTitle = data.Data[i].title;
         // ugly method to replace ' ' to %20 in movieTitle, I know I was supposed to write a loop
@@ -59,25 +66,41 @@ function getApiDataImdb(event) {
         movieTitleFormatted3 = movieTitleFormatted2.replace(" ", "%20");
         movieTitleFormatted4 = movieTitleFormatted3.replace(" ", "%20");
         var requestURLOmdb = 'http://www.omdbapi.com/?i=tt3896198&apikey=bf124b81&t=' + movieTitleFormatted4 + '&plot=full'
-        var requestPosterOmdb = 'http://img.omdbapi.com/?i=tt3896198&apikey=bf124b81&t=' + movieTitleFormatted4 + '&plot=full'
+        var requestPosterOmdb = 'http://img.omdbapi.com/?i=tt3896198&apikey=bf124b81&t=' + movieTitleFormatted4 + '&plot=full' 
         // end of ugly method
+      //  console.log(requestURLOmdb + ' ' + genre);
 
+      var moviePoster = document.createElement('a');
+      moviePoster.setAttribute('href', 'img.omdbapi.com');
+      moviePoster.setAttribute('id', 'dramaPoster');
+      
+      var imagePoster = document.createElement('img');
+      imagePoster.setAttribute('src', requestPosterOmdb);
+      moviePoster.setAttribute('width', '50px');
+      moviePoster.appendChild(imagePoster)
+      document.getElementById('boxOfDVDsDrama').appendChild(moviePoster);
+      console.log('i ' + i + 'URL ' + requestURLOmdb + ' ' + 'poster ' + requestPosterOmdb)
         //start second fetch
         fetch(requestURLOmdb)
           .then(function (response) {
-            return response.json();
+            return response.json();    
           })
+
           .then(function (data) {
+
+        //    console.log(data);
             var object1 = data;
-            // I definitely can convert following five if .. else if ... else if ... pieces to one loop later
+       //     console.log('title ' + object1.Title + ' released ' + object1.Released + ' actors' + object1.Actors);
             if (genre == 'Drama') {
               var movieName1 = document.createElement('p');
               movieName1.innerHTML = object1.Title;
               document.getElementById('boxOfDVDsDrama').appendChild(movieName1);
+              
               var movieData = document.createElement('p');
               movieData.innerHTML = 'Director: ' + object1.Director + ', Actors: ' + object1.Actors + ', Rating ' + object1.Metascore;
               document.getElementById('boxOfDVDsDrama').appendChild(movieData)
               dramaCount++;
+              
             }
             else if (genre == 'Family') {
               var movieName1 = document.createElement('p');
@@ -114,13 +137,30 @@ function getApiDataImdb(event) {
               movieData.innerHTML = 'Director: ' + object1.Director + ', Actors: ' + object1.Actors + ', Rating ' + object1.Metascore;
               document.getElementById('boxOfDVDsAction').appendChild(movieData)
               thrillerCount++;
+              
             }
             else { }
           });
         //end second fetch
       }
     });
-}
 
+}
+// requestPosterOmdb = 'http://img.omdbapi.com/?i=tt3896198&apikey=bf124b81&t=Remember%20the%20Titans&plot=full'
+// fetch(requestPosterOmdb)
+ //                .then(function(data) {var moviePoster = document.createElement('p');
+ //              var image = data; 
+ //            moviePoster.innerHTML = image;
+ //          document.getElementById('boxOfDVDsDrama').appendChild(moviePoster)})
+
+
+         
+
+// lines below are just to make sure that JS works here
+// var pTag1 = document.createElement("p");
+// pTag1.textContent = 'this paragraph is created using JS';
+// pTag1.setAttribute("id", "list1")
+// pTag1.setAttribute("id", "parTag1")
+// document.getElementById('question').appendChild(pTag1);
 
 
