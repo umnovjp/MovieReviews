@@ -1,17 +1,14 @@
-.h1 {
-
+h1 {
+color: red;
 }
-
-.h2 {
-
+h2 {
+  Color: red;
 }
-
-.h3 {
-
+h3 {
+Color: red;
 }
-
-.p {
-
+p {
+color: gray
 }
 
 #parTag1 { font-size: 18px;
