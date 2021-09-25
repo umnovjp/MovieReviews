@@ -25,7 +25,9 @@ and when I click comedy button, they are displayed as well
 
 ![image](https://user-images.githubusercontent.com/88108211/134759551-2c07336c-d3d4-403c-abb0-1b70fb476138.png)
 
-more movies are added when I click drama, family, thriller buttons.
+more movies are added when I click drama, family, thriller buttons. We added posters to be displayed. We are confident links are correct. But for some reason, same poster is displayed every time. That's why we have index.html and index_with_posters.html in the repo. 
+![image](https://user-images.githubusercontent.com/88174852/134775354-c7dbf460-dfee-47e4-b58c-5519ffcc56f2.png)
+
 And when I click rent me on RedHat or buy me at Amazon buttons, I am forwarded to their websites
 
 
@@ -39,12 +41,9 @@ opening a second page in order to make for easy navigation for the user.
 You'll also find that in this folder we have laid out the classes for the buttons, which are accessed in the script.js file.
 File generally used to contain the bulk of the information on the web page.
 
-In the style.css file you'll find:
+It was our decision not to do too much with CSS file. That's why site is almost black and white. we can add more styles later. 
 
-Formatting and color schemes that we used in order to make the webpage give more of a redbox, netflix, type of feel as we
-wanted the user to have a familiar experience to what they may commonly associate with going to pick out a movie.
-
-We still have a good bug that needs squashing,it is the result of a microsoft setting.
+Live page is approved at https://johnpaulgeorgeringo.github.io/MovieReviews/. But it does not work as planned. It is the result of a microsoft setting.
 ![image](https://user-images.githubusercontent.com/88108211/134757900-820debcc-071b-4ae2-b0eb-9bf138ee2841.png)
 
 
