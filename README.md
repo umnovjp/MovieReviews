@@ -18,17 +18,15 @@ The API "OMDb api" we used offers multiple clicks a month with a limit on the am
 
 When I click button with action movies,
 
-![image](https://user-images.githubusercontent.com/88108211/134757675-9c801d1f-cb3c-4b3e-a17f-036bbfa0609d.png)
+![image](https://user-images.githubusercontent.com/88108211/134759518-79814fb1-798d-4d0a-b85c-3a8fcb9866e3.png)
 
 title of each of five movies is displayed along with film director, actors and rating
 and when I click comedy button, they are displayed as well
 
-![image](https://user-images.githubusercontent.com/88108211/134757625-1a58d2e7-57ee-4476-9566-9ef5e8ca7fdf.png)
+![image](https://user-images.githubusercontent.com/88108211/134759551-2c07336c-d3d4-403c-abb0-1b70fb476138.png)
 
 more movies are added when I click drama, family, thriller buttons.
 And when I click rent me on RedHat or buy me at Amazon buttons, I am forwarded to their websites
-
-![image](https://user-images.githubusercontent.com/88108211/134757602-212aad1f-dd79-469b-985f-7085ced6a8c1.png)
 
 
 We used two APIs, first returns list of movies by genre and year from IMDB API. Second takes movie title from first web API then sends request to get detailed movie info from OMDB web API.
