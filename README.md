@@ -18,34 +18,30 @@ The API "OMDb api" we used offers multiple clicks a month with a limit on the am
 
 When I click button with action movies,
 
-![image](https://user-images.githubusercontent.com/88108211/134759518-79814fb1-798d-4d0a-b85c-3a8fcb9866e3.png)
+![image](https://user-images.githubusercontent.com/88174852/134790220-369602d6-1721-49cf-9de2-2a4c66f00068.png)
 
-title of each of five movies is displayed along with film director, actors and rating
-and when I click comedy button, they are displayed as well
 
-![image](https://user-images.githubusercontent.com/88108211/134759551-2c07336c-d3d4-403c-abb0-1b70fb476138.png)
+title of each of five movies is displayed along with film director, actors, rating, and plot. 
+And when I click comedy button, they are displayed as well
 
-more movies are added when I click drama, family, thriller buttons.
-And when I click rent me on RedHat or buy me at Amazon buttons, I am forwarded to their websites
+![image](https://user-images.githubusercontent.com/88174852/134790257-69ab098d-c89d-4feb-946c-dd628e1fa9d5.png)
 
+more movies are added when I click drama, family, thriller buttons. We added posters to be displayed. We are confident links are correct. But for some reason, same poster is displayed every time. So code is still there but it is disabled. I am sure we can add this functionality later, when we get help from our TA. 
+![image](https://user-images.githubusercontent.com/88174852/134790773-a175a467-ed39-41f5-b6c2-32e86039e7c7.png)
+
+And when I click rent me on RedHat or buy me at Amazon buttons, I am forwarded to their websites.
+
+And when I click to sidebar button it lands me at proper <div>.
 
 We used two APIs, first returns list of movies by genre and year from IMDB API. Second takes movie title from first web API then sends request to get detailed movie info from OMDB web API.
 
+In Script.js file you'll find most of what makes this project work. It dynamically puts text on page as I click buttons. 
 
-In Script.js file you'll find most of what makes this project work.
+Styles are created using style.css file.  
 
-In the index.html file the groups html used to create the sidebar which is intended to jump to a section on the main page, as opposed to
-opening a second page in order to make for easy navigation for the user.
-You'll also find that in this folder we have laid out the classes for the buttons, which are accessed in the script.js file.
-File generally used to contain the bulk of the information on the web page.
+Live page is approved at https://johnpaulgeorgeringo.github.io/MovieReviews/. But it does not work as planned. It is the result of a Microsoft setting.
+![image](https://user-images.githubusercontent.com/88174852/134790915-69fd1679-7d04-49ec-88a8-67b032dde0b6.png)
 
-In the style.css file you'll find:
-
-Formatting and color schemes that we used in order to make the webpage give more of a redbox, netflix, type of feel as we
-wanted the user to have a familiar experience to what they may commonly associate with going to pick out a movie.
-
-We still have a good bug that needs squashing,it is the result of a microsoft setting.
-![image](https://user-images.githubusercontent.com/88108211/134757900-820debcc-071b-4ae2-b0eb-9bf138ee2841.png)
 
 
 Thanks for reading
