@@ -29,6 +29,12 @@ And when I click comedy button, they are displayed as well
 more movies are added when I click drama, family, thriller buttons. We added posters to be displayed. We are confident links are correct. But for some reason, same poster is displayed every time. So code is still there but it is disabled. I am sure we can add this functionality later, when we get help from our TA. 
 ![image](https://user-images.githubusercontent.com/88174852/134790773-a175a467-ed39-41f5-b6c2-32e86039e7c7.png)
 
+We developed two more features. One allows to search by year. It is disabled for now but it is there. ![image](https://user-images.githubusercontent.com/88174852/135017335-43e99204-565d-447d-b7ea-3a9d89349d89.png)
+
+Another one will replace boring Amazon and RedHat buttons with nice banners![image](https://user-images.githubusercontent.com/88174852/135017652-6e90dd43-e7d8-48da-8162-a2af46714a79.png)
+
+
+
 And when I click rent me on RedHat or buy me at Amazon buttons, I am forwarded to their websites.
 
 And when I click to sidebar button it lands me at proper <div>.
