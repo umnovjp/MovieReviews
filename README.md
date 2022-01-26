@@ -1,7 +1,8 @@
-#MovieReviews
+# MovieReviews
+in this project entitled "Movie Reviews" it utilizes information from openly available online databases to pull down small lists of movies according to their genres. A user can enter a year such as 2021 or 2018 in the input field. Then click on one of the buttons to search by genre to view five movie cards. There are five genres currently included. 
 
-in this project entitled "Movie Reviews" it utilizes information from openly available online databases to pull down small lists of movies according to their genres.
-
+## Technical Acceptance
+We use two server sides APIs. First we find movie titles by year and genre on https://data-imdb1.p.rapidapi.com/movie/byYear/. Then we find additional information such as film director, actors, rating, plot on http://www.omdbapi.com/. Application does not use JS alerts. We used template imported from Figma fro CSS styling. We improved it a little to make colors less default-looking. It accepts movie release year in the input field and genre using buttons. Also, user can click more buttons to rent those movies at redbox.com or buy them at Amazon.com. 
 The lists are accessed through an API entitled "OMDb Api" as well as a second API entitled "Data-Imdb"
 Once accessed the lists populate the relevant movie category that they happen to fall under.
 For example when a query is ran for a movies of a particular genre, that information is then taken
@@ -20,7 +21,6 @@ When I click button with action movies,
 
 ![image](https://user-images.githubusercontent.com/88174852/134790220-369602d6-1721-49cf-9de2-2a4c66f00068.png)
 
-
 title of each of five movies is displayed along with film director, actors, rating, and plot. 
 And when I click comedy button, they are displayed as well
 
@@ -29,19 +29,13 @@ And when I click comedy button, they are displayed as well
 more movies are added when I click drama, family, thriller buttons. We added posters to be displayed. We are confident links are correct. But for some reason, same poster is displayed every time. So code is still there but it is disabled. I am sure we can add this functionality later, when we get help from our TA. 
 ![image](https://user-images.githubusercontent.com/88174852/134790773-a175a467-ed39-41f5-b6c2-32e86039e7c7.png)
 
-And when I click rent me on RedHat or buy me at Amazon buttons, I am forwarded to their websites.
-
 And when I click to sidebar button it lands me at proper <div>.
 
-We used two APIs, first returns list of movies by genre and year from IMDB API. Second takes movie title from first web API then sends request to get detailed movie info from OMDB web API.
+In Script.js file you'll find most of what makes this project work. It dynamically adds text to the page as I click buttons. 
+## Styles
+Styles are created using style.css file. They have tons of space for improvement. Our project team was understaffed. That's why we concentrated on features and not on style. 
 
-In Script.js file you'll find most of what makes this project work. It dynamically puts text on page as I click buttons. 
-
-Styles are created using style.css file.  
-
-Live page is approved at https://johnpaulgeorgeringo.github.io/MovieReviews/. But it does not work as planned. It is the result of a Microsoft setting.
+GitHub link is https://github.com/JohnPaulGeorgeRingo/MovieReviews/. Live page is approved at https://johnpaulgeorgeringo.github.io/MovieReviews/. But it does not work as planned. It is the result of a Microsoft setting.
 ![image](https://user-images.githubusercontent.com/88174852/134790915-69fd1679-7d04-49ec-88a8-67b032dde0b6.png)
-
-
 
 Thanks for reading
